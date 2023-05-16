@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Officer.master.cs" Inherits="Flex.Pages.Officer.Officer" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+        <title>FLEX - Officer</title>  
+    
+    
+    <link href="/Content/master.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<header id="header">  
+<h1>FLEX - Officer </h1>
+    
+    <h3>Officer Account</h3>
+</header>  
+<nav id="nav">  
+    <ul>  
+        <li><a href="OfficerHome.aspx">Home</a></li>  
+        <li><a href="OfficerStudent.aspx">Student Info</a></li>  
+        <li><a href="OfficerTeacher.aspx">Teacher Info</a></li>  
+        <li><a href="OfficerDepartment.aspx">Department Info</a></li>  
+        <li><a href="OfficerCourses.aspx">Courses Info</a></li>  
+        <li><a href="OfficerEnrollTeacherCourse.aspx">Teacher Course Enroll</a></li>  
+    </ul>  
+</nav>  
+  
+
+        <form id="Form1" runat="server">
+        <div id="con">  
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">  
+          
+            </asp:ContentPlaceHolder>  
+        </div>  
+        
+   
+              <div class="left">        
+        <asp:Button ID="LogOut" CssClass="button button3" runat="server" Text="Logout" style="margin-left: 36px"  OnClick="LogOut_Click"/>
+      </div>
+    </form>
+<footer id="footer">  
+    
+ 
+       
+       
+
+        
+    FLEX.com ©2022 All rights reserved  <br/>
+   
+    Built by:
+    <br />
+    AbdulRahman Nadeem
+    <br /> 
+    Malik Umar
+    <br />
+    Hammad Hassan
+    <br />
+    Belal
+</footer>  
+</body>
+</html>

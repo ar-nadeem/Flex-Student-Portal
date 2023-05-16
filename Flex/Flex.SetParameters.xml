@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="Flex" />
+  <setParameter name="SqlCon1-Web.config Connection String" value="Server=cloud.nadeem.pk;Database=Flex;User Id=sa;Password=yourStrong(!)Password;" />
+</parameters>

@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Teacher.master.cs" Inherits="Flex.Pages.Teacher.Teacher" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+        <title>FLEX - Teacher</title>  
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+
+     <link href="/Content/master.css" rel="stylesheet" />
+        <link href="PrettyLabel.css" rel="stylesheet" />
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="text-white" style="background-image: url('/Pages/blue.jpg');background-size:50%">
+
+
+
+<header id="header" >  
+<h1 class="auto-style1">FLEX - Teacher</h1>
+    
+    <h3>Teacher Account</h3>
+</header>  
+<nav id="nav" style="background-color:rgb(27, 7, 95, 0.70);">  
+    <ul>  
+        <li><a href="TeacherHome.aspx">Home</a></li>  
+        <li><a href="TeacherCourse.aspx">View Attendance</a></li>  
+       <li><a href="TeacherInsertAttendance.aspx">Add Attendance</a></li> 
+     <%--   <li><a href="TeacherAttendance.aspx">Teacher Attendance</a></li>  --%>
+        <li><a href="TeacherTranscript.aspx">Transcript</a></li>  
+        <li><a href="TeacherSearchStudent.aspx">Search Student</a></li>  
+
+    </ul>  
+</nav>  
+  
+
+        <form id="Form1" runat="server">
+        <div id="con" style="background-color:rgb(13, 34, 78, 0.50);">  
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">  
+          
+            </asp:ContentPlaceHolder>  
+        </div>  
+   
+   
+  
+
+       <div class="left">        
+        <asp:Button ID="LogOut" CssClass="button button3" runat="server" Text="Logout" style="margin-left: 36px"  OnClick="LogOut_Click"/>
+      </div>
+             </form>
+<footer id="footer" class="text-white" style="background-color: rgb(3, 41, 57, 0.70);">  
+    FLEX.com ©2023 All rights reserved  
+    <br/>
+    Built by:
+    <br />
+    AbdulRahman Nadeem
+    <br /> 
+    Abdullah Naeem
+    <br/>
+    Yousaf Khalid
+    <br />
+    Abuzar Saeed
+</footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="SqlCon1-Web.config Connection String" description="SqlCon1 Connection String used in web.config by the application to access the database." defaultValue="Server=cloud.nadeem.pk;Database=Flex;User Id=sa;Password=yourStrong(!)Password;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Flex\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SqlCon1']/@connectionString" />
+  </parameter>
+</parameters>

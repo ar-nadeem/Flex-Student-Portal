@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Student.master.cs" Inherits="Flex.Pages.Student.Student" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+        <title>FLEX - Student</title>  
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+
+    <link href="/Content/master.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="text-white" style="background-image: url('/Pages/blue.jpg');background-size:50%">
+   
+
+    
+
+    <header id="header">  
+<h1>FLEX - Student </h1>
+    
+    <h3>Student Account</h3>
+</header>  
+  
+
+        <form id="Form1" runat="server">
+<nav id="nav" style="background-color:rgb(27, 7, 95, 0.70);">  
+    <ul>  
+        <li><a href="StudentHome.aspx">Home</a></li>  
+        <li><a href="StudentCourse.aspx">Course Registration</a></li>  
+        <li><a href="StudentFee.aspx">Fee-Challan</a></li> 
+        <li><a href="StudentAttendance.aspx">Attendance</a></li>  
+        <li><a href="StudentTranscript.aspx">Transcript</a></li>
+
+
+
+
+
+    </ul>  
+</nav>  
+  
+
+        <div id="con"  style="background-color:rgb(13, 34, 78, 0.50);">  
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">  
+     
+                
+     
+            </asp:ContentPlaceHolder>  
+         </div> 
+               <div class="left">        
+        <asp:Button ID="LogOut"  CssClass="button btn-danger" runat="server" Text="Logout" style="margin-left: 36px"  OnClick="LogOut_Click"/>
+      </div>
+  </form>
+
+<footer id="footer" class="text-white" style="background-color: rgb(3, 41, 57, 0.70);">  
+    FLEX.com ©2023 All rights reserved  
+    <br/>
+    Built by:
+    <br />
+    AbdulRahman Nadeem
+    <br /> 
+    Abdullah Naeem
+    <br/>
+    Yousaf Khalid
+    <br />
+    Abuzar Saeed
+</footer>
+
+
+
+
+
+
+</body>
+</html>
